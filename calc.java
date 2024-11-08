@@ -23,21 +23,21 @@ public class calc {
             System.out.println("enter your products in the format a b");
             a = sc.nextDouble();
             b = sc.nextDouble();
-            System.out.println("dif: " + (a * b));
+            System.out.println("product: " + (a * b));
         } else if(operator.equals("/")){
             System.out.println("enter your divisors and dividends in the format a b");
             a = sc.nextDouble();
             b = sc.nextDouble();
-            System.out.println("dif: " + (a / b));
+            System.out.println("quotient: " + (a / b));
         } else if(operator.equals("^")){
-            System.out.println("enter your base and power in the format a b");
+            System.out.println("enter your base and exponent in the format a b");
             a = sc.nextDouble();
             ans = a;
             b = sc.nextDouble();
             for(double i = 1; i < b; i++){
                 ans = ans * a;
             }
-            System.out.println(ans);
+            System.out.println("power: " + ans);
         }
     }
 }
